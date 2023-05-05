@@ -1,0 +1,5 @@
+allure-results
+logs
+target
+test-output
+.DS_Store
