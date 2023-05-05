@@ -20,7 +20,7 @@ public class Array_SD {
 
 	@When("The user select Array item from the drop down menu")
 	public void the_user_select_array_item_from_the_drop_down_menu() {
-		Loggerload.info("The user select Array item from the drop down menu");
+		Loggerload.info("The user select Array item from the drop down menu!!");
 		arrayPage.dropdown_Array();
 	}
 
