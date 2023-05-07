@@ -1,11 +1,6 @@
 @queue
 Feature: User to sign in the dsalgo application and test Queue page
 
-  Background: The user is logged in to DS Algo portal
-    Given The user is on Signin page of DS Algo portal
-    When The user enter valid "Numpysdet84" and "sdet84batch"
-    And The user click on login button
-    Then The user redirected to homepage
 
   @TS_queue_02
   Scenario: The user is able to navigate to Queue Data Structure Page

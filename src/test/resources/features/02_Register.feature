@@ -18,7 +18,7 @@ Feature: Validating Register page
     Given The user opens Register Page
     When The user clicks "Register" button after entering username with other fields empty
       | username       |
-      | Numpy@sdet84_1 |
+      | Numpy@sdet100_1 |
     Then It should display an error message "Please fill out this field." below Password textbox
 
   @TS_register_04
@@ -26,7 +26,7 @@ Feature: Validating Register page
     Given The user opens Register Page
     When The user clicks "Register" button after entering "username" and "password" with Password Confirmation field empty
       | username       | password     |
-      | Numpy@sdet84_1 | testpassword |
+      | Numpy@sdet100_1 | testpassword |
     Then It should display an error message "Please fill out this field." below Password Confirmation textbox
 
   @TS_register_05
@@ -42,7 +42,7 @@ Feature: Validating Register page
     Given The user opens Register Page
     When The user clicks "Register" button after entering valid "username" and different passwords in "password" and "password confirmation" fields
       | username       | password     | password confirmation |
-      | Numpy@sdet84_1 | testpassword | testpassword1         |
+      | Numpy@sdet100 | testpassword | testpassword1         |
     Then It should display an error message "password_mismatch:The two password fields didn’t match."
 
   @TS_register_07
@@ -50,7 +50,7 @@ Feature: Validating Register page
     Given The user opens Register Page
     When The user enters a valid "username" and "password" with characters less than 8
       | username       | password | password confirmation |
-      | Numpy@sdet84_1 | a1b2c3d  | a1b2c3d               |
+      | Numpy@sdet100 | a1b2c3d  | a1b2c3d               |
     Then It should display an error message "Password should contain at least 8 characters"
 
   @TS_register_08
@@ -58,7 +58,7 @@ Feature: Validating Register page
     Given The user opens Register Page
     When The user enters a valid "username" and "password" with only numbers
       | username       | password | password confirmation |
-      | Numpy@sdet84_1 | 12345678 |              12345678 |
+      | Numpy@sdet100 | 12345678 |              12345678 |
     Then It should display an error message "Password can’t be entirely numeric."
 
   @TS_register_09
@@ -66,7 +66,7 @@ Feature: Validating Register page
     Given The user opens Register Page
     When The user enters a valid "username" and "password" similar to username
       | username       | password   | password confirmation |
-      | Numpy@sdet84_1 | testsdet84 | testsdet84            |
+      | Numpy@sdet100 | testsdet100 | testsdet100            |
     Then It should display an error message "password can’t be too similar to your other personal information."
 
   @TS_register_10
@@ -74,7 +74,7 @@ Feature: Validating Register page
     Given The user opens Register Page
     When The user enters a valid "username" and commonly used password "password"
       | username       | password | password confirmation |
-      | Numpy@sdet84_1 | Welcome1 | Welcome1              |
+      | Numpy@sdet100 | Welcome1 | Welcome1              |
     Then It should display an error message "Password can’t be commonly used password"
 
   @TS_register_11
@@ -82,7 +82,7 @@ Feature: Validating Register page
     Given The user opens Register Page
     When The user enters a valid "username" and "password" and "password confirmation"
       | username       | password  | password confirmation |
-      | Numpy@sdet84_3 | RT56YU@78 | RT56YU@78             |
+      | Numpy@sdet100 | RT56YU@78 | RT56YU@78             |
     Then The user should be redirected to Homepage with the message "New Account Created. You are logged in as <username>"
 
   @TS_register_12
@@ -90,7 +90,7 @@ Feature: Validating Register page
     Given The user opens Register Page
     When The user enters a valid existing "username" with "password" and "password confirmation"
       | username       | password  | password confirmation |
-      | Numpy@sdet84_1 | RT56YUabc | RT56YUabc             |
+      | Numpy@sdet100 | RT56YUabc | RT56YUabc             |
     Then It should display an error message "Username already exists"
 
   @TS_register_13
@@ -101,4 +101,4 @@ Feature: Validating Register page
 
     Examples: 
       | username       | password  |
-      | Numpy@sdet84_1 | RT56YU@78 |
+      | Numpy@sdet100 | RT56YU@78 |

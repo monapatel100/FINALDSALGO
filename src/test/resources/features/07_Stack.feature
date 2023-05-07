@@ -1,11 +1,7 @@
 @stack
 Feature: User tests the stack page on the Ds algo application
 
-  Background: The user is logged in to DS Algo portal
-    Given The user is on Signin page of DS Algo portal
-    When The user enter valid "Numpysdet84" and "sdet84batch"
-    And The user click on login button
-    Then The user redirected to homepage
+
 
   @TS_stack_02
   Scenario: The user is directed to "Stack" Page

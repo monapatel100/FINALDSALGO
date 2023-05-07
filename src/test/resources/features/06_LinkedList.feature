@@ -1,11 +1,7 @@
 @linkedlist
 Feature: Testing LinkedList page
 
-  Background: The user is logged in to DS Algo portal
-    Given The user is on Signin page of DS Algo portal
-    When The user enter valid "Numpysdet84" and "sdet84batch"
-    And The user click on login button
-    Then The user redirected to homepage
+
 
   @TS_ll_02
   Scenario: User navigated to "linked list" page

@@ -1,6 +1,6 @@
 @signin
 Feature: Validating Login page
-
+Before:
   @TS_signin_01
   Scenario: Verifying Register link
     Given The user is on signin page
@@ -34,6 +34,6 @@ Feature: Validating Login page
 
   @TS_signin_04
   Scenario: Verifying signout link
-    Given The user is on signin page with valid username "Numpysdet84" and password "sdet84batch"
+    Given The user is on signin page with valid username "Ninjacoders" and password "Monrag@204"
     When The user click signout button
     Then The user redirected to homepage
