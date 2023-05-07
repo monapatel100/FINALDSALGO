@@ -45,7 +45,6 @@ public class ElementsUtils {
 		String[] str1 = code.split("\n");
 		for (int i = 0; i < str1.length; i++) {
 			if (str1[i].equalsIgnoreCase("\\b")) {
-				Thread.sleep(2000);
 				element.sendKeys(Keys.BACK_SPACE);
 			} else {
 				element.sendKeys(str1[i]);
