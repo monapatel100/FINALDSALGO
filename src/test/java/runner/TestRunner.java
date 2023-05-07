@@ -12,7 +12,7 @@ import utilities.ConfigReader;
 @CucumberOptions(plugin = { "pretty", "html:target/dsAlgoReport.html" }, // reporting purpose
 		monochrome = false, // console output
 		//tags = ("@TS_array_19 and @TS_array_20 and @TS_array_21"), // tags from feature file
-		//tags="@register",
+		tags="@graph",
 		features = { "src/test/resources/features" }, // location of feature files
 		glue = { "stepDefinition", "appHooks" }) // location of step definition files
 
