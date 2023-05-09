@@ -12,8 +12,8 @@ import utilities.ConfigReader;
 @CucumberOptions(plugin = { "pretty", "html:target/dsAlgoReport.html" }, // reporting purpose
 		monochrome = false, // console output
 		//tags = ("@TS_array_19 and @TS_array_20 and @TS_array_21"), // tags from feature file
-		tags="@graph",
-		features = { "src/test/resources/features" }, // location of feature files
+		//tags="@register",
+		features = { "src/test/resources/features/" }, // location of feature files
 		glue = { "stepDefinition", "appHooks" }) // location of step definition files
 
 public class TestRunner extends AbstractTestNGCucumberTests {

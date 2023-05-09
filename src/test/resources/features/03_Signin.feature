@@ -1,6 +1,5 @@
 @signin
 Feature: Validating Login page
-Before:
   @TS_signin_01
   Scenario: Verifying Register link
     Given The user is on signin page
@@ -37,3 +36,11 @@ Before:
     Given The user is on signin page with valid username "Ninjacoders" and password "Monrag@204"
     When The user click signout button
     Then The user redirected to homepage
+    
+   @TS_back
+   Scenario: Signing in background
+    Given The user is on Signin page of DS Algo portal
+    When The user enter valid "Ninjacoders" and "Monrag@204"
+    And The user click on login button
+    Then The user redirected to homepage    
+    
